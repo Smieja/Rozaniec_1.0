@@ -27,3 +27,21 @@ subprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+buildTypes {
+
+    buildTypes.all{
+        proguardFiles 'proguard-rules.pro'
+    }
+
+    debug {
+        debuggable  false
+        minifyEnabled false
+        shrinkResources false
+    }
+
+    release {
+        debuggable  false
+        minifyEnabled true
+        shrinkResources true
+    }
+}

@@ -282,7 +282,8 @@ class _MyAppState extends State<MyApp> {
                 id: '${_nextMediaId++}',
                 album: "Public Domain",
                 title: "Nature Sounds ${++_addedCount}",
-                artUri: Uri.parse("images/roz.jpg"),
+                artUri: Uri.parse(
+                    "https://media.wnyc.org/i/1400/1400/l/80/1/ScienceFriday_WNYCStudios_1400.jpg"),
               ),
             ));
           },
